@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Module1" script:language="StarBasic">REM  *****  BASIC  *****
+
+Sub Main
+
+Dim Doc As Object
+Dim Presentation As Object
+
+Doc = ThisComponent
+Presentation = Doc.Presentation
+
+REM Uncomment the line below to make all presentations loop endlessly:
+Presentation.IsEndless(True)
+
+REM Uncomment the line below to make all presentations run fullscreen:
+Presentation.IsFullScreen(True)
+
+REM Uncomment the line below to remove the 10-second delay:
+Presentation.Pause = 0
+
+REM Uncomment the line below to bypass the navigator on program start:
+REM Presentation.StartWithNavigator(False)
+
+REM Uncomment the line below to make sure presentations always run on top:
+REM Presentation.IsAlwaysOnTop(False)
+
+REM Uncomment the line below to change slides automatically rather than manually on all presentations:
+REM Presentation.IsAutomatic(True)
+
+REM Uncomment the line below to allow animations in all presentations:
+REM Presentation.AllowAnimations(True)
+
+REM Uncomment the line below to always hide the mouse during presentations:
+REM Presentation.IsMouseVisible(False)
+
+REM Uncomment the line below to start presentations directly on opening:
+REM Presentation.start()
+
+End Sub
+</script:module>
