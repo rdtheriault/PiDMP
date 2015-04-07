@@ -11,7 +11,7 @@ sudo apt-get install xRDP -y
 sudo apt-get install x11vnc -y 
 sudo apt-get install tightvncserver -y 
 sudo apt-get install libreoffice -y
-sudo apt-get install screensaver -y
+sudo apt-get install xscreensaver -y
 
 sudo update rc.d apache2 defaults
 
@@ -35,9 +35,9 @@ sudo mv template.pptx /var/www/templates
 sudo mv info.txt /var/www/templates 
 sudo chmod +x /home/pi/OpenShow.sh
 
-
-cd /home
+cd /home/pi
 sqlite3 main.db
 BEGIN;
 CREATE TABLE filed (id Integer Primary Key, file Text, name Text, uploaded Date, types Text); COMMIT; 
 .exit
+sudo chown www-data /home/pi/main.db
