@@ -1,0 +1,17 @@
+PRESENTATIONS
+
+You should start with one of the templates in order to have the files auto start and to progress to the next slide automatically.
+
+If you use the PowerPoint template, please save the file as .pps for the same reason 
+- you can still save to the .pptx but when you are ready to upload it needs to be in the .pps format or you will only see the first slide.
+
+If you want to convert an old PowerPoint presentation
+- you will need to check Advance Slide After : X secs (found under the Transistions tab).
+- you can either set each slide advancing (stay there while clicking on each slide) or wait until you are done with all slides
+- if you choose to do them all the same select a time and choose Apply to All
+- under the Slide Show tab, select Set Up Slide Show and then check the Loop continuously box
+- check if you have animations by going under the Animation tab. Check each slide.
+- if you have an animation, select each number (will only show up when the Animation tab is open) and delete it.
+
+MOVIES
+
