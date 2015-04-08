@@ -41,7 +41,7 @@
 	<div style='padding-left:20px;'>
 		<?php 
 			try{
-			$dbc = new PDO('sqlite:/home/pi/main.db');
+			$dbc = new PDO('sqlite:/home/pi/temp/main.db');
 			}
 			catch(PDOException $e){
 			echo $e->getMessage();
@@ -67,7 +67,7 @@
 	<div style='padding-left:20px;'>
 		<?php 
 			try{
-			$dbc = new PDO('sqlite:/home/pi/main.db');
+			$dbc = new PDO('sqlite:/home/pi/temp/main.db');
 			}
 			catch(PDOException $e){
 			echo $e->getMessage();
