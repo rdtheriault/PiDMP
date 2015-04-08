@@ -15,6 +15,10 @@ sudo apt-get install xscreensaver -y
 
 sudo update rc.d apache2 defaults
 
+libreoffice --impress
+sleep 10
+pkill soffice.bin
+
 wget http://sagefirellc.com/PiDMP/template.odp
 wget http://sagefirellc.com/PiDMP/template.pptx
 
