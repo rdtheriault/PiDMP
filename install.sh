@@ -13,8 +13,6 @@ sudo apt-get install tightvncserver -y
 sudo apt-get install libreoffice -y
 sudo apt-get install xscreensaver -y
 
-sudo update rc.d apache2 defaults
-
 libreoffice --impress
 
 sudo wget http://sagefirellc.com/PiDMP/template.odp
