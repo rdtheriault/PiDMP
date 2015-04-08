@@ -27,6 +27,7 @@ sudo mv index.php /var/www
 sudo mv delete.php /var/www
 sudo mv run2.php /var/www
 sudo mv upload.php /var/www
+sudo mv create.sql /home/pi
 sudo mv OpenShow.sh /home/pi
 sudo mv -f Module1.xba /home/pi/.config/libreoffice/3/user/basic/Standard
 sudo mv -f .xscreensaver /home/pi
