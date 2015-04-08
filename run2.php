@@ -11,7 +11,7 @@
 
 	$var = $_POST["file"];
 
-	$output = exec('sudo -u pi /home/pi/OpenShow.sh '.$var);
+	$output = exec('sudo -u pi /home/pi/temp/OpenShow.sh '.$var);
 	//$output = exec('/home/pi/OpenShow.sh '.$var);
 	echo $output;
 	//$user = get_current_user();
