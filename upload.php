@@ -43,7 +43,7 @@
             {
                 echo "The file ".$newFileName." has been uploaded <br>";
                 try{
-                    $dbc = new PDO('sqlite:/home/pi/main.db');
+                    $dbc = new PDO('sqlite:/home/pi/temp/main.db');
                 }
                 catch(PDOException $e){
                     echo $e->getMessage();
