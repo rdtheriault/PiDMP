@@ -49,7 +49,7 @@
                     echo $e->getMessage();
                 }
 
-                $sql = "INSERT INTO files (file, name, uploaded) VALUES ('".$target_path."','".$title."','".$dat."')";
+                $sql = "INSERT INTO files (file, name, uploaded, types) VALUES ('".$target_path."','".$title."','".$dat."','type')";
                 //echo $sql;
                 $err = $dbc->query($sql);
             } 
