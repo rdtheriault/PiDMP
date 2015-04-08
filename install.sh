@@ -16,15 +16,13 @@ sudo apt-get install xscreensaver -y
 sudo update rc.d apache2 defaults
 
 libreoffice --impress
-sleep 10
-pkill soffice.bin
 
-wget http://sagefirellc.com/PiDMP/template.odp
-wget http://sagefirellc.com/PiDMP/template.pptx
+sudo wget http://sagefirellc.com/PiDMP/template.odp
+sudo wget http://sagefirellc.com/PiDMP/template.pptx
 
 mkdir /home/pi/temp
 mkdir /home/pi/temp/pres
-mkdir /var/www/templates
+sudo mkdir /var/www/templates
 
 sudo rm /var/www/index.html
 sudo mv index.php /var/www
@@ -36,7 +34,7 @@ sudo mv -f Module1.xba /home/pi/.config/libreoffice/3/user/basic/Standard
 sudo mv -f .xscreensaver /home/pi
 sudo mv template.opd /var/www/templates
 sudo mv template.pptx /var/www/templates 
-sudo mv info.txt /var/www/templates 
+sudo mv info.txt /var/www/templates/info.txt
 sudo chmod +x /home/pi/OpenShow.sh
 
 cd /home/pi
