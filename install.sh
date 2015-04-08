@@ -36,8 +36,8 @@ sudo mv template.pptx /var/www/templates
 sudo mv info.txt /var/www/templates/info.txt
 sudo chmod +x /home/pi/OpenShow.sh
 
-cd /home/pi
+cd /home/pi/temp
 sqlite3 main.db
 
-sudo chown www-data /home/pi/main.db
 sudo chown -R www-data /home/pi/temp
+sudo chmod 777 /home/pi/temp/main.db
