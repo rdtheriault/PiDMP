@@ -37,7 +37,5 @@ sudo chmod +x /home/pi/OpenShow.sh
 
 cd /home/pi
 sqlite3 main.db
-BEGIN;
-CREATE TABLE filed (id Integer Primary Key, file Text, name Text, uploaded Date, types Text); COMMIT; 
-.exit
+
 sudo chown www-data /home/pi/main.db
