@@ -41,3 +41,4 @@ cd /home/pi
 sqlite3 main.db
 
 sudo chown www-data /home/pi/main.db
+sudo chown -R www-data /home/pi/temp
