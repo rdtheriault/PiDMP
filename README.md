@@ -4,7 +4,7 @@ Under construction
 
 Turn your PI into a digital Sign
 
-Use the following commands on your Pi to get the install started
+***Use the following commands on your Pi to get the install started
 
 
 
@@ -17,7 +17,14 @@ sudo chmod +x install.sh
 ./install.sh
 
 
-Run commands at everystart up
+***Processing instructions
+
+LibreOffice will open (need to do this to create configs) close it
+
+When the sql line shows up enter -> .read /home/pi/create.sql   -> .exit
+
+
+***Run commands at everystart up
 
 vncserver
-services apache2 start
+
