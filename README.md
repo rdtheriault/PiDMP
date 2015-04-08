@@ -23,6 +23,11 @@ LibreOffice will open (need to do this to create configs) close it
 When the sql line shows up enter -> .read /home/pi/create.sql   -> .exit
 
 
+***Final setup
+
+Add www-data to sudoer for certian scripts
+
+
 ***Run commands at everystart up
 
 vncserver
