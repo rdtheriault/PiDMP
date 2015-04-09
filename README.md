@@ -27,6 +27,12 @@ When the sql line shows up enter -> .read /home/pi/create.sql   -> .exit
 
 Add www-data to sudoer for certian scripts
 
+sudo visudo
+
+Add the following to the end
+
+www-data ALL=(ALL) NOPASSWD: /home/pi/temp/OpenShow.sh
+
 
 ***Run commands at everystart up
 
