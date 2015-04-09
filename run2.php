@@ -16,7 +16,8 @@
 	echo $output;
 	//$user = get_current_user();
 	//echo $user;
-	<br> echo $var;
+	echo "<br>";
+	echo $var;
 
 	
 ?>
