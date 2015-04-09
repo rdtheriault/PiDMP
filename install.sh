@@ -47,7 +47,7 @@ sudo mv create.sql /home/pi
 sudo mv OpenShow.sh /home/pi/temp
 sudo mv -f Module1.xba /home/pi/.config/libreoffice/3/user/basic/Standard
 sudo mv -f .xscreensaver /home/pi
-sudo mv template.opd /var/www/templates
+sudo mv template.odp /var/www/templates
 sudo mv template.pptx /var/www/templates 
 sudo mv info.txt /var/www/templates/info.txt
 echo "***Completed creates and moves***"
