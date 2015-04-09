@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "***Starting update***"
+echo "***Starting update (this might take a while)***"
 sudo apt-get update -qq
 sudo apt-get dist-upgrade -qq
 sudo apt-get upgrade -qq
@@ -61,4 +61,4 @@ echo "***Changing Permissions***"
 sudo chown -R www-data /home/pi/temp
 sudo chmod 777 /home/pi/temp/main.db
 sudo chmod +x /home/pi/temp/OpenShow.sh
-echo "Change Complete"
+echo "***Change Complete***"
