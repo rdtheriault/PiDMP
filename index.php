@@ -46,14 +46,14 @@
 			catch(PDOException $e){
 			echo $e->getMessage();
 			}
-			$sql = "SELECT * FROM files";
+			$sql = "SELECT * FROM files WHERE types = 'pres'";
 			echo "<br><table><tr><td style='padding-right: 20px;'>TITLE</td><td style='padding-right: 20px;'>FILE</td>";
 			foreach ($dbc->query($sql) as $row){
 				//echo $row['rowid']." - ".$row['file']." - ".$row['name'];
 				$files = $row['file'];
 				$names = explode("/",$files);
 				$name = $names[5];
-				echo "<tr><td style='padding-right: 20px;'>".$row['name']."</td><td style='padding-right: 20px;'>".$name."</td><form action='run2.php' method='post'  onsubmit='info()'><td style='padding-right: 20px;'><input type='hidden' name='file' value='".$row['file']."'><input type='submit' value='Run Now'></td></form><form action='delete.php' method='post'><td><input type='hidden' name='id' value='".$row['id']."'><input type='hidden' name='files' value='".$files."'><input type='submit' value='Delete'></td></form></tr>";
+				echo "<tr><td style='padding-right: 20px;'>".$row['name']."</td><td style='padding-right: 20px;'>".$name."</td><form action='run2.php' method='post'  onsubmit='info()'><td style='padding-right: 20px;'><input type='hidden' name='file' value='".$row['file']."'><input type='hidden' name='type' value='pres'><input type='submit' value='Run Now'></td></form><form action='delete.php' method='post'><td><input type='hidden' name='id' value='".$row['id']."'><input type='hidden' name='files' value='".$files."'><input type='submit' value='Delete'></td></form></tr>";
 			}
 			echo "</table>";
 		
@@ -72,14 +72,14 @@
 			catch(PDOException $e){
 			echo $e->getMessage();
 			}
-			$sql = "SELECT * FROM files";
+			$sql = "SELECT * FROM files WHERE types = 'vid'";
 			echo "<br><table><tr><td style='padding-right: 20px;'>TITLE</td><td style='padding-right: 20px;'>FILE</td>";
 			foreach ($dbc->query($sql) as $row){
 				//echo $row['rowid']." - ".$row['file']." - ".$row['name'];
 				$files = $row['file'];
 				$names = explode("/",$files);
 				$name = $names[5];
-				echo "<tr><td style='padding-right: 20px;'>".$row['name']."</td><td style='padding-right: 20px;'>".$name."</td><form action='run2.php' method='post'  onsubmit='info()'><td style='padding-right: 20px;'><input type='hidden' name='file' value='".$row['file']."'><input type='submit' value='Run Now'></td></form><form action='delete.php' method='post'><td><input type='hidden' name='id' value='".$row['id']."'><input type='hidden' name='files' value='".$files."'><input type='submit' value='Delete'></td></form></tr>";
+				echo "<tr><td style='padding-right: 20px;'>".$row['name']."</td><td style='padding-right: 20px;'>".$name."</td><form action='run2.php' method='post'  onsubmit='info()'><td style='padding-right: 20px;'><input type='hidden' name='file' value='".$row['file']."'><input type='hidden' name='type' value='vid'><input type='submit' value='Run Now'></td></form><form action='delete.php' method='post'><td><input type='hidden' name='id' value='".$row['id']."'><input type='hidden' name='files' value='".$files."'><input type='submit' value='Delete'></td></form></tr>";
 			}
 			echo "</table>";
 		
@@ -92,7 +92,7 @@
 	<br>
 	<div style='padding-left:20px;'>
 		<form action="stream.php" method="POST"><table><tr>
-			<td style='padding-right: 20px;'>URL: <input name="stream" required></td>
+			<td style='padding-right: 20px;'>URL: <input name="stream" required><input type='hidden' name='type' value='stream'></td>
 			<td style='padding-right: 20px;'><input type="submit" value="Start Stream"></td></tr>
 		</table></form> 
 	</div>
