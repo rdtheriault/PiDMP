@@ -18,7 +18,7 @@ sudo chmod +x install.sh
 
 ***Processing instructions
 
-LibreOffice will open (need to do this to create configs) close it
+LibreOffice will open (needs to do this to create configs) close it
 
 When the sql line shows up enter -> .read /home/pi/create.sql   -> .exit
 
