@@ -2,7 +2,7 @@
 
 libreoffice
 pkill omxplayer
-sleep 5
+sleep 1
 pkill soffice.bin
 
 
@@ -11,7 +11,7 @@ if pgrep omxplayer > /dev/null
 then
     echo 'running'
 else
-    omxplayer $1 -display :0.0
+    DISPLAY=':0.0' omxplayer $1
 fi
 if ps ax | grep -v grep | grep libreoffice > /dev/null
 then
