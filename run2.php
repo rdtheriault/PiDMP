@@ -24,7 +24,7 @@
 	elseif ($var2 == "vids"){
 		//echo "Yep this would be videos";
 		$output = exec('sudo -u pi /home/pi/temp/startvideos.sh '.$var);
-	
+	}
 	elseif ($var2 == "stream"){
 		echo "Yep this would be a stream";
 		$output = exec('sudo -u pi /home/pi/temp/stream.sh '.$var3);
