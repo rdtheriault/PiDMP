@@ -45,6 +45,9 @@ sudo mv run2.php /var/www
 sudo mv upload.php /var/www
 sudo mv create.sql /home/pi
 sudo mv OpenShow.sh /home/pi/temp
+sudo mv startvideo.sh /home/pi/temp
+sudo mv startvideos.sh /home/pi/temp
+sudo mv stream.sh /home/pi/temp
 sudo mv -f Module1.xba /home/pi/.config/libreoffice/3/user/basic/Standard
 sudo mv -f .xscreensaver /home/pi
 sudo mv template.odp /var/www/templates
@@ -61,4 +64,7 @@ echo "***Changing Permissions***"
 sudo chown -R www-data /home/pi/temp
 sudo chmod 777 /home/pi/temp/main.db
 sudo chmod +x /home/pi/temp/OpenShow.sh
+sudo chmod +x /home/pi/temp/startvideo.sh
+sudo chmod +x /home/pi/temp/startvideos.sh
+sudo chmod +x /home/pi/temp/stream.sh
 echo "***Change Complete***"
