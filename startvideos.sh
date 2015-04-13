@@ -1,13 +1,16 @@
 #!/bin/bash
 
 libreoffice --quickstart
+sleep 2
 pkill omxplayer
-sleep 1
+sleep 2
 pkill soffice.bin
 
 declare -A vids
 
-#Make a newline a delimiter instead of a space SAVEIFS=$IFS IFS=$(echo -en "\n\b")
+#Make a newline a delimiter instead of a space 
+SAVEIFS=$IFS 
+IFS=$(echo -en "\n\b")
 
 
 current=0
@@ -36,7 +39,8 @@ else
 
 	DISPLAY=':0.0' omxplayer "$FILES${vids[$current]}"
 fi
-if ps ax | grep -v grep | grep libreoffice > /dev/null then
+if ps ax | grep -v grep | grep libreoffice > /dev/null
+then
     break
 fi
 done
