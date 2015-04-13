@@ -31,7 +31,7 @@ sudo visudo
 
 Add the following to the end
 
-www-data ALL=(ALL) NOPASSWD: /home/pi/temp/OpenShow.sh
+www-data ALL=(ALL) NOPASSWD: /home/pi/temp/
 
 
 ***Run commands at everystart up
