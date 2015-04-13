@@ -36,5 +36,5 @@ www-data ALL=(ALL) NOPASSWD: /home/pi/temp/OpenShow.sh
 
 ***Run commands at everystart up
 
-vncserver
+vncserver - allows you to connect to second display via tightvnc client
 
