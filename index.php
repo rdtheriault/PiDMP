@@ -91,8 +91,9 @@
 
 	<br>
 	<div style='padding-left:20px;'>
-		<form action="stream.php" method="POST"><table><tr>
-			<td style='padding-right: 20px;'>URL: <input name="stream" required><input type='hidden' name='type' value='stream'></td>
+		<form action="run2.php" method="POST"><table><tr>
+			<td style='padding-right: 20px;'>URL: <input name="stream" required><html></td>
+			<input type='hidden' name='type' value='stream'>
 			<td style='padding-right: 20px;'><input type="submit" value="Start Stream"></td></tr>
 		</table></form> 
 	</div>
