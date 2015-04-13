@@ -8,6 +8,8 @@ pkill soffice.bin
 
 declare -A vids
 
+FILES='/home/pi/temp/pres'
+
 #Make a newline a delimiter instead of a space 
 SAVEIFS=$IFS 
 IFS=$(echo -en "\n\b")
