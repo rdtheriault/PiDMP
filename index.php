@@ -61,7 +61,7 @@
 	</div>
 
 	<br><br>
-	<div style='font-size: x-large;'>Run uploaded videos (working on)</div>
+	<form action='run2.php' method='post' onsubmit='info()'><div style='font-size: x-large;'>Run uploaded videos<input type='submit' value='Play all'><input type='hidden' name='type' value='vids'></div></form>
 
 	<br>
 	<div style='padding-left:20px;'>
@@ -104,3 +104,4 @@
 </div>
 </body>
 </html>
+
