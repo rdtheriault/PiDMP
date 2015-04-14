@@ -48,11 +48,14 @@ www-data ALL=(ALL) NOPASSWD: /home/pi/temp/
 
 NOTES
 
--Download tightvnc client (Java program) to remote onto the Pi (Putty works well too)
+-Download tightvnc client (Java program for both x11 and vncserver) to remote onto the Pi (Putty works well, too)
 
 -x11vnc - use to remote view DISPLAY 0:0 (the one showing on the TV) Port 5901
 
--vncserver - allows you to connect to second display (via tightvnc client) Port 5900
+-vncserver - allows you to connect to second display (allows non interuption of show) Port 5900
 
 -You will need to get the IP address so you can get to the webpage (ifconfig works)
 
+-You can also assign an IP and use ifconfig to get the MAC address for DHCP
+
+-You can set up the Wi-Fi under Menu-> Preferences -> WiFi Config
