@@ -1,8 +1,9 @@
  #!/bin/bash
 
-libreoffice --quickstart
+libreoffice --quickstart &
+
 pkill omxplayer
-sleep 1
+sleep 2
 pkill soffice.bin
 
 DISPLAY=':0.0' omxplayer $1
