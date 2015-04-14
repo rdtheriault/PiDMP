@@ -29,7 +29,7 @@ REM Uncomment the line below to change slides automatically rather than manually
 REM Presentation.IsAutomatic(True)
 
 REM Uncomment the line below to allow animations in all presentations:
-REM Presentation.AllowAnimations(True)
+Presentation.AllowAnimations(True)
 
 REM Uncomment the line below to always hide the mouse during presentations:
 REM Presentation.IsMouseVisible(False)
