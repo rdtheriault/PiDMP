@@ -1,8 +1,9 @@
 #!/bin/bash
 
-libreoffice
+libreoffice --quickstart &
+
 pkill omxplayer
-sleep 1
+sleep 2
 pkill soffice.bin
 
 
