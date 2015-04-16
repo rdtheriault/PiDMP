@@ -49,7 +49,9 @@ sudo mv startvideo.sh /home/pi/temp
 sudo mv startvideos.sh /home/pi/temp
 sudo mv stream.sh /home/pi/temp
 sudo mv -f Module1.xba /home/pi/.config/libreoffice/3/user/basic/Standard
+sudo mv -f registrymodifications.xcu /home/pi/.config/libreoffice/3/user
 sudo mv -f .xscreensaver /home/pi
+sudo mv -f php.ini /etc/php5/apache2
 sudo mv template.odp /var/www/templates
 sudo mv template.pptx /var/www/templates 
 sudo mv info.txt /var/www/templates/info.txt
