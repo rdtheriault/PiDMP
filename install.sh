@@ -55,6 +55,18 @@ sudo mv -f php.ini /etc/php5/apache2
 sudo mv template.odp /var/www/templates
 sudo mv template.pptx /var/www/templates 
 sudo mv info.txt /var/www/templates/info.txt
+echo ""
+echo "Do you want to disable overscan (do you see a black border)?"
+echo "You can make future changes in /boot/config.txt"
+echo "Enter the number that matches your choice."
+select yn in "Yes" "No"
+do
+case $yn in
+    Yes ) sudo mv -f config.txt /boot; break;;
+    No ) break;;
+esac
+done
+
 echo "***Completed creates and moves***"
 
 echo "->Creating database, please enter '.read /home/pi/create.sql'"
