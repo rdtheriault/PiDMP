@@ -15,19 +15,19 @@
 
 	if ($var2 == "pres"){
 		//echo "Yep this would be a presentation";
-		$output = exec('sudo -u pi /home/pi/temp/OpenShow.sh '.$var);
+		$output = exec('sudo /home/pi/temp/OpenShow.sh '.$var);
 	}
 	elseif ($var2 == "vid"){
 		//echo "Yep this would be a video";
-		$output = exec('sudo -u pi /home/pi/temp/startvideo.sh '.$var);
+		$output = exec('sudo /home/pi/temp/startvideo.sh '.$var);
 	}
 	elseif ($var2 == "vids"){
 		//echo "Yep this would be videos";
-		$output = exec('sudo -u pi /home/pi/temp/startvideos.sh '.$var);
+		$output = exec('sudo /home/pi/temp/startvideos.sh '.$var);
 	}
 	elseif ($var2 == "stream"){
 		echo "Yep this would be a stream";
-		$output = exec('sudo -u pi /home/pi/temp/stream.sh '.$var3);
+		$output = exec('sudo /home/pi/temp/stream.sh '.$var3);
 	}
 
 	//$output = exec('/home/pi/OpenShow.sh '.$var);
