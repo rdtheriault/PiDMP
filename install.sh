@@ -22,6 +22,8 @@ echo "libreoffice"
 sudo apt-get install libreoffice -qq
 echo "Screensaver"
 sudo apt-get install xscreensaver -qq
+echo "omxplayer"
+sudo apt-get install omxplayer -qq
 echo "***Completed installing programs***"
 
 echo "->Starting Impress to create config file, close program and PiDMP install will continue"
