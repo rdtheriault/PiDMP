@@ -17,6 +17,8 @@ During rasp-config you can:
 ###Use the following commands on your Pi to get the install started
 
 ```
+apt-get install git
+apt-get install sudo
 sudo git clone https://github.com/rdtheriault/PiDMP.git
 cd PiDMP
 sudo chmod +x install.sh
