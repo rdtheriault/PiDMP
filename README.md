@@ -6,13 +6,10 @@ Turn your PI into a digital Sign
 
 ##Start up
 
-###Install Raspian 
-
-(ensure to select EN or your keyboard will be a bit screwy - i.e. British)
+###Install Diet-Pi
  
-During rasp-config you can:
- - Change password
- - Enable boot to desktop (recommended)
+During config you will:
+ - Install LDXE
 
 ###Use the following commands on your Pi to get the install started
 
