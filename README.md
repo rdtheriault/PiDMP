@@ -2,7 +2,7 @@
 
 Under construction (mostly done)
 
-Turn your PI into a digital Sign
+Turn your PI into a digital sign with Diet-Pi (light-weight version)
 
 ##Start up
 
