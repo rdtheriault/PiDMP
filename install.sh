@@ -2,9 +2,10 @@
 
 echo "***Starting update (this might take a while)***"
 sudo apt-get update -qq
-sudo apt-get dist-upgrade -qq
 sudo apt-get upgrade -qq
+sudo apt-get dist-upgrade -qq
 sudo apt-get update -qq
+sudo apt-get upgrade -qq
 echo "***Completed Update***"
 
 echo "***Starting Installs***"
